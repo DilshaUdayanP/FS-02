@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: black;
+            height: 70px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        #brand {
+            margin-left: 12em;
+        }
+
+        #menu {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #MainSection {
+            background-image: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/CSS-background-gradient-featured.jpg");
+            height: 100%;
+            background-size: contain;
+
+        }
+
+        #Brapper {
+            background-color: rgb(0, 5, 0, 0);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        button {
+            padding: 1em 2em;
+            margin-top: 2em;
+            border-radius: 2em;
+            background-color: coral;
+            color: aliceblue;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 350px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery::after {
+            content: "";
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="brand">
+            <h2>Geekster's Food World</h2>
+        </div>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Landing Page</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <div id="MainSection">
+        <div id="Brapper">
+            <h2 style="padding: 1em 0em ;">Welcome To CSS</h2>
+            <p style="padding: 0em 12em;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, sequi
+                doloribus? Illum quisquam
+                debitis, consectetur at cum maxime expedita repellendus, est doloremque modi atque laborum optio hic.
+                Cumque provident quisquam qui ratione voluptas nobis corrupti nulla ullam sapiente laboriosam voluptate
+                accusamus, libero mollitia molestiae facere sunt repellat necessitatibus. Sed, quaerat?Lorem ipsum dolor
+                sit
+                amet consectetur, adipisicing elit. Assumenda commodi reprehenderit, sapiente quis et asperiores
+                voluptatum.
+                Impedit corrupti eveniet voluptate laboriosam nulla esse non tenetur ullam autem consequuntur odio,
+                placeat,
+                vel dolor! Omnis, ea explicabo? Quo eius et, nam incidunt ipsa deserunt. Quod quas voluptas
+                consequuntur.
+                Possimus itaque, reprehenderit, suscipit atque ratione cum quod nihil soluta aliquam natus dolores
+                magnam
+                qui dicta, a quasi. Ab nihil dolor officiis rem quibusdam saepe tempore aperiam nulla laborum minima
+                quam
+                dignissimos id omnis deserunt debitis blanditiis aut, eos vero ex doloribus. Quaerat assumenda cumque
+                alias
+                nostrum, modi culpa ipsam non aperiam doloribus ullam architecto explicabo enim eos nesciunt, est ad
+                amet!
+                Dolorum voluptas quisquam nulla, autem provident omnis sit recusandae dignissimos neque reprehenderit
+                eius
+                tenetur facere totam, iure odio asperiores? Aut necessitatibus provident recusandae consequuntur
+                adipisci
+                magnam sed ipsa laborum, expedita doloremque reprehenderit natus vitae deserunt, tempora aspernatur ad
+                inventore, a amet. Vero.</p>
+            <button type="submit" value="Submit">Submit</button>
+        </div>
+        <div class="gallery">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg">
+            <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
