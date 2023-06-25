@@ -31,7 +31,7 @@
             height: 600px;
         }
 
-        .container {
+        .container1 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -40,6 +40,7 @@
 
         img {
             max-width: 100%;
+            max-height: 20em;
         }
 
         .image {
@@ -49,6 +50,221 @@
         .text {
             font-size: 20px;
             padding-left: 20px;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card {
+            width: 280px;
+            padding: 50px;
+            color: hsla(0, 0%, 100%, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .card:first-child {
+            background-color: hsl(31, 77%, 52%);
+        }
+
+        .card:nth-child(2) {
+            background-color: hsl(184, 100%, 22%);
+        }
+
+        .card:last-child {
+            background-color: hsl(179, 100%, 13%);
+        }
+
+        .card h1 {
+            text-transform: uppercase;
+            margin: 20px 0;
+            color: hsl(0, 0%, 95%);
+        }
+
+        .card p {
+            margin-bottom: 90px;
+        }
+
+        .card a {
+            text-decoration: none;
+            background-color: hsl(0, 0%, 95%);
+            padding: 12px 30px;
+            border-radius: 50px;
+        }
+
+        .card:first-child a {
+            color: hsl(31, 77%, 52%);
+        }
+
+        .card:nth-child(2) a {
+            color: hsl(184, 100%, 22%);
+        }
+
+        .card:last-child a {
+            color: hsl(179, 100%, 13%);
+        }
+
+        .card a:hover {
+            color: hsl(0, 0%, 95%);
+            border: 2px solid hsl(0, 0%, 95%);
+            background: transparent;
+        }
+
+        @media (max-width: 375px) {
+            body {
+                /* width: 100vw; */
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Poppins;
+                font-size: 15px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+        }
+
+        article {
+            position: relative;
+            border-radius: 16px;
+            box-shadow: none;
+            background: #fff;
+            transform-origin: center;
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+
+            border: 2px solid black;
+        }
+
+        article a::after {
+            position: absolute;
+            inset-block: 0;
+            inset-inline: 0;
+            cursor: pointer;
+            content: "";
+        }
+
+        article h2 {
+            margin: 0 0 18px 0;
+            font-family: "Bebas Neue", cursive;
+            font-size: 1.9rem;
+            letter-spacing: 0.06em;
+            color: var(--title-color);
+            transition: color 0.3s ease-out;
+        }
+
+        figure {
+            margin: 0;
+            padding: 0;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        article img {
+            max-width: 100%;
+            transform-origin: center;
+            transform: scale(var(--img-scale));
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .article-body {
+            padding: 24px;
+        }
+
+        article a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #28666e;
+        }
+
+        article a:focus {
+            outline: 1px dotted #28666e;
+        }
+
+        article a .icon {
+            min-width: 24px;
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
+            transform: translateX(var(--link-icon-translate));
+            opacity: var(--link-icon-opacity);
+            transition: all 0.3s;
+        }
+
+        article:has(:hover, :focus) {
+            --img-scale: 1.1;
+            --title-color: #28666e;
+            --link-icon-translate: 0;
+            --link-icon-opacity: 1;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .articles {
+            display: grid;
+            max-width: 1200px;
+            margin-inline: auto;
+            padding-inline: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+
+        }
+
+        @media screen and (max-width: 960px) {
+            article {
+                container: card/inline-size;
+            }
+
+            .article-body p {
+                display: none;
+            }
+        }
+
+        @container card (min-width: 380px) {
+            .article-wrapper {
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                gap: 16px;
+            }
+
+            .article-body {
+                padding-left: 0;
+            }
+
+            figure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            figure img {
+                height: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+        }
+
+        .sr-only:not(:focus):not(:active) {
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
         }
     </style>
 
@@ -60,25 +276,26 @@
             data-settings="{&quot;pagination&quot;:true,&quot;speed&quot;:1000,&quot;timeout&quot;:2000,&quot;paused&quot;:false,&quot;pause_on_hover&quot;:false,&quot;swipe&quot;:true,&quot;nav_always_show_desktop&quot;:&quot;&quot;,&quot;nav_always_show_mobile&quot;:true,&quot;breakpoint&quot;:&quot;780px&quot;,&quot;unmute&quot;:false,&quot;anchor&quot;:null}"
             data-anchor-id="">
             <li class="sow-slider-image  sow-slider-image-cover"
-                style="visibility: visible;;background-image: url(https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg);cursor: pointer;"
+                style="visibility: visible;;background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP1-539x440);cursor: pointer;"
                 data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}">
                 <a href="https://www.youtube.com/embed/xCOH-pYCvdk" target="_blank" rel="noopener noreferrer">
 
                     <img width="1253" height="589"
-                        src="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg"
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP1-539x440"
                         class="sow-slider-background-image skip-lazy" alt="Image Not Found" decoding="async"
                         loading="eager" style=""
-                        srcset="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg 1253w" /></a>
+                        srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-M365-Icon-Bounce-Word-Merch:VP1-539x440 1253w" /></a>
             </li>
             <li class="sow-slider-image  sow-slider-image-cover"
-                style="visibility: hidden;;background-image: url(https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg);cursor: pointer;"
+                style="visibility: hidden;;background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP1-539x440);cursor: pointer;"
                 data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}">
                 <a href="https://www.youtube.com/embed/a56TprHbFgU" target="_blank" rel="noopener noreferrer">
 
-                    <img width="1253" height="589" src="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg"
+                    <img width="1253" height="589"
+                        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP1-539x440"
                         class="sow-slider-background-image skip-lazy" alt="Image Not Found" decoding="async"
                         loading="eager" style=""
-                        srcset="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg 1253w"
+                        srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP1-539x440 1253w"
                         sizes="(max-width: 1253px) 100vw, 1253px" /></a>
             </li>
             <li class="sow-slider-image  sow-slider-image-cover"
@@ -116,14 +333,121 @@
         class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="1">
         <div class="hero-strip panel-widget-style panel-widget-style-for-w642c4eb13cc95-0-0-1"></div>
     </div>
-    <div class="container">
+
+    <section class="articles" style="margin-top: 20px;">
+        <article>
+            <div class="article-wrapper">
+                <figure>
+                    <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>This is some title</h2>
+                    <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                        bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article>
+
+            <div class="article-wrapper">
+                <figure>
+                    <img src="https://picsum.photos/id/1005/800/450" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>This is some title</h2>
+                    <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                        bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article>
+
+            <div class="article-wrapper">
+                <figure>
+                    <img src="https://picsum.photos/id/103/800/450" alt="" />
+                </figure>
+                <div class="article-body">
+                    <h2>This is some title</h2>
+                    <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue
+                        bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                    </p>
+                    <a href="#" class="read-more">
+                        Read more <span class="sr-only">about this is some title</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div class="container1">
         <div class="image">
-            <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg">
+            <img
+                src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XGP-Highlight-Ultimate-1PP-Evergreen-Keyart-FY22:VP1-539x440">
         </div>
         <div class="text">
-            <h1>Paris is one of the most beautiful cities in France.</h1>
+            <h1>Xbox Game Pass Ultimate</h1>
+            <h6>Xbox Live Gold and hundreds of high-quality console and PC games. Play together with friends and
+                discover your next favourite game.</h6>
         </div>
     </div>
+    <div class="container">
+        <div class="card">
+            <img src="imagesPreview/icon-sedans.svg" alt="" />
+            <h1>sedans</h1>
+            <p>
+                Choose a sedan for its affordability and execellent fuel
+                economy. Ideal for cruising in the city or on your next road
+                trip.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="imagesPreview/icon-suvs.svg" alt="" />
+            <h1>suvs</h1>
+            <p>
+                Take an SUV for its spacious interior, power, and
+                versatility. Perfect for your next family vacation and
+                off-road adventures.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <img src="imagesPreview/icon-luxury.svg" alt="" />
+            <h1>luxury</h1>
+            <p>
+                Cruise in the best car brands without the bloated prices.
+                Enjoy the enhanced comfort of a luxury rental and arrive in
+                style.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+
 </body>
 
 </html>
