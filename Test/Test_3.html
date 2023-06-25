@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/slider.css">
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.min.js'
+        id='jquery-core-js'></script>
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.cycle.min.js'
+        id='sow-slider-slider-cycle2-js'></script>
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.slider.min.js'
+        id='sow-slider-slider-js'></script>
+
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.cycle.swipe.min.js'
+        id='sow-slider-slider-cycle2-swipe-js'></script>
+
+    <style type="text/css">
+        .sow-slider-image {
+            width: 100%;
+            height: 600px;
+        }
+
+        .sow-slider-background-image {
+            width: 100%;
+            height: 600px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .image {
+            flex-basis: 40%;
+        }
+
+        .text {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sow-slider-base" style="display: none">
+        <ul class="sow-slider-images"
+            data-settings="{&quot;pagination&quot;:true,&quot;speed&quot;:1000,&quot;timeout&quot;:2000,&quot;paused&quot;:false,&quot;pause_on_hover&quot;:false,&quot;swipe&quot;:true,&quot;nav_always_show_desktop&quot;:&quot;&quot;,&quot;nav_always_show_mobile&quot;:true,&quot;breakpoint&quot;:&quot;780px&quot;,&quot;unmute&quot;:false,&quot;anchor&quot;:null}"
+            data-anchor-id="">
+            <li class="sow-slider-image  sow-slider-image-cover"
+                style="visibility: visible;;background-image: url(https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg);cursor: pointer;"
+                data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}">
+                <a href="https://www.youtube.com/embed/xCOH-pYCvdk" target="_blank" rel="noopener noreferrer">
+
+                    <img width="1253" height="589"
+                        src="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg"
+                        class="sow-slider-background-image skip-lazy" alt="Image Not Found" decoding="async"
+                        loading="eager" style=""
+                        srcset="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Beijing.jpg 1253w" /></a>
+            </li>
+            <li class="sow-slider-image  sow-slider-image-cover"
+                style="visibility: hidden;;background-image: url(https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg);cursor: pointer;"
+                data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}">
+                <a href="https://www.youtube.com/embed/a56TprHbFgU" target="_blank" rel="noopener noreferrer">
+
+                    <img width="1253" height="589" src="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg"
+                        class="sow-slider-background-image skip-lazy" alt="Image Not Found" decoding="async"
+                        loading="eager" style=""
+                        srcset="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Paris.jpg 1253w"
+                        sizes="(max-width: 1253px) 100vw, 1253px" /></a>
+            </li>
+            <li class="sow-slider-image  sow-slider-image-cover"
+                style="visibility: hidden;;background-image: url(https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Zurich.jpg);cursor: pointer;"
+                data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}">
+                <a href="https://www.youtube.com/embed/vTyBsVOXzsw" target="_blank" rel="noopener noreferrer">
+
+                    <img width="1253" height="589"
+                        src="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Zurich.jpg"
+                        class="sow-slider-background-image skip-lazy" alt="Image Not Found" decoding="async"
+                        loading="eager" style=""
+                        srcset="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/Zurich.jpg 1253w"
+                        sizes="(max-width: 1253px) 100vw, 1253px" /></a>
+            </li>
+        </ul>
+        <ol class="sow-slider-pagination">
+            <li><a href="#" data-goto="0" aria-label="display slide 1"></a></li>
+            <li><a href="#" data-goto="1" aria-label="display slide 2"></a></li>
+            <li><a href="#" data-goto="2" aria-label="display slide 3"></a></li>
+        </ol>
+
+        <div class="sow-slide-nav sow-slide-nav-next">
+            <a href="#" data-goto="next" aria-label="next slide" data-action="next">
+                <em class="sow-sld-icon-medium-right"></em>
+            </a>
+        </div>
+
+        <div class="sow-slide-nav sow-slide-nav-prev">
+            <a href="#" data-goto="previous" aria-label="previous slide" data-action="prev">
+                <em class="sow-sld-icon-medium-left"></em>
+            </a>
+        </div>
+    </div>
+    <div id="panel-w642c4eb13cc95-0-0-1"
+        class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-last-child" data-index="1">
+        <div class="hero-strip panel-widget-style panel-widget-style-for-w642c4eb13cc95-0-0-1"></div>
+    </div>
+    <div class="container">
+        <div class="image">
+            <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg">
+        </div>
+        <div class="text">
+            <h1>Paris is one of the most beautiful cities in France.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
