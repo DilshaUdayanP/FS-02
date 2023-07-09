@@ -72,7 +72,6 @@ body {
 }
 
 .section_title {
-    color: #14505c;
     text-align: center;
 }
 
@@ -132,10 +131,6 @@ body {
     padding: 2.5rem 0;
 }
 
-.section_title,
-.subscribe_description {
-    color: white;
-}
 
 .subscribe_description {
     text-align: center;
@@ -163,4 +158,129 @@ body {
     background-color: rgb(13 100 118) !important;
     margin-top: -3px;
     margin-left: 33px;
+}
+
+
+.video_description {
+    font-size: 14px;
+    padding-top: 10px;
+    color: #14505c;
+    text-align: center;
+}
+
+.video_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-file {
+    margin: auto;
+    width: 80%;
+}
+
+.experience_section {
+    padding: 0 0 200px 0;
+}
+
+.experience_content {
+    display: flex;
+    /* text-align: center; */
+    font-family: 'Open Sans', sans-serif;
+    padding: 40px 0;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.experience_data {
+    padding: 0 20px;
+}
+
+.experience_number {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 7px;
+    color: #14505c;
+}
+
+.experience_description {
+    font-size: 14px;
+    color: #14505c;
+}
+
+.experience_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience_image-overlay {
+    position: relative;
+}
+
+.experience_img .experience_image-overlay .experience_img-one {
+    width: 100%;
+    width: 434px;
+}
+
+.experience_img .experience_image-overlay .experience_img-two {
+    width: 250px;
+    position: absolute;
+    top: -235px;
+    left: 101px;
+}
+
+.choose_image {
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image .overlay {
+    position: absolute;
+    bottom: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.image .overlay::before {
+    content: "";
+    background: #ffff;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    z-index: -2;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+}
+
+.image:hover .overlay {
+    color: black;
+}
+
+.image:hover .overlay::before {
+    bottom: 0px;
+}
+
+.textmuted {
+    color: #f8f8f8;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: capitalize;
 }
