@@ -1,0 +1,166 @@
+body {
+    background-image: linear-gradient(white, rgb(208 240 247));
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-image: url("./Assets/Images/home1.jpg");
+    border-radius: 20px 20px 0px 0px;
+    background-size: cover;
+}
+
+.h1_size {
+    font-size: 3.5em;
+}
+
+.ExploreButton {
+    background-color: rgb(19 79 91);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.about_section {
+    padding: 16px 0;
+}
+
+.about_container {
+    display: flex;
+
+}
+
+.about_data {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_title {
+    color: #14505c;
+}
+
+.section_title {
+    color: #14505c;
+    text-align: center;
+}
+
+.about_data .about_description {
+    color: #1d5c69;
+    padding: 30px 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+.about_data .button {
+    padding: 16px 32px;
+    background-color: #14505c;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 200px;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.about_img {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.about_img-one {
+    width: 195px;
+}
+
+.about_img-two {
+    width: 250px;
+}
+
+.about_image-overlay {
+    overflow: hidden;
+}
+
+
+.about_image-overlay img {
+    transition: transform .1s ease;
+}
+
+.about_img-one:hover,
+.about_img-two:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.subscribe_bg {
+    background-color: hsl(190, 64%, 22%);
+    padding: 2.5rem 0;
+}
+
+.section_title,
+.subscribe_description {
+    color: white;
+}
+
+.subscribe_description {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.subscribe_form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe_input {
+    width: 25%;
+    padding-right: .5rem;
+    background-color: hsl(190, 24%, 97%);
+    color: hsl(190, 24%, 35%);
+    height: 3rem;
+}
+
+.subscribe_input::placeholder {
+    color: hsl(190, 24%, 35%);
+}
+
+.btn_style {
+    background-color: rgb(13 100 118) !important;
+    margin-top: -3px;
+    margin-left: 33px;
+}
