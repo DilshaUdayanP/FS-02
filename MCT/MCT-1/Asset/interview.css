@@ -1,0 +1,18 @@
+.contactinput {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    text-align: right;
+}
+
+.inputstyle {
+    margin: 20px;
+}
+
+
+ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px
+}
