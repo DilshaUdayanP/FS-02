@@ -2,7 +2,7 @@
 A straightforward paint web application to learn some JavaScript.
 
 # Features
-Shapes: Rectangle, Oval, Circle, Line, Free pen
+Shapes: Rectangle, Triangle, Circle, Line, Free pen
 
 # Drawing Suggestions (HTML, CSS, javascript)
 A simple page that helps you draw something with random suggestions
