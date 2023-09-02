@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(event) {
+            var color = event.value;
+            document.getElementById('div').style.color = color;
+        }
+        function changebackColor(event) {
+            var color = event.value;
+            document.getElementById('div').style.backgroundColor = color;
+        }
+        function padding(event) {
+            var color = event.value;
+            document.getElementById('div').style.padding = color + "em";
+        }
+        function fontsize(event) {
+            var color = event.value;
+            document.getElementById('p').style.fontSize = color + "em";
+        }
+        function fontweight(event) {
+            var color = event.value;
+            document.getElementById('p').style.fontWeight = color;
+        }
+    </script>
+    <style>
+        #div {
+            height: 20em;
+            width: 30em;
+            margin-bottom: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div">
+        <p id="p" style="border: 2px solid black;">testting the size and valuess</p>
+    </div>
+
+    <h1>- colour</h1>
+    <select name="colors" onchange="changeColor(this)">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+    </select>
+    <h1>- background-colour</h1>
+    <select name="colors" onchange="changebackColor(this)">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+    </select>
+    <h1>- padding</h1>
+    <select name="size" onchange="padding(this)">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+    </select>
+    <h1>- font size</h1>
+    <select name="size" onchange="fontsize(this)">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+    </select>
+    <h1>- font weight </h1>
+    <select name="size" onchange="fontweight(this)">
+        <option value="bold">bold</option>
+        <option value="bolder">bolder</option>
+        <option value="normal">normal</option>
+    </select>
+</body>
+
+</html>
