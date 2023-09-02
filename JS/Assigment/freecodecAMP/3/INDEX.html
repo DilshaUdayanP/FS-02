@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var color = [
+            "red",
+            "green",
+            "cyan",
+            "black",
+            "voilet",
+            "blue",
+            "yellow",
+            "purple",
+            "orange",
+            "lightgreen",
+            "lemon",
+        ];
+        var index = 0;
+        var isTriangle = true;
+
+
+        function changeColor() {
+            //   console.log(index);
+            if (index === color.length) {
+                index = 0;
+            }
+            document.getElementById("circle").style.backgroundColor = color[index];
+            index++;
+        }
+
+        function changeShape() {
+            if (!isTriangle) {
+                var i = document.getElementsByClassName("inner")[0];
+                i.className = "triangle-bottom-left";
+                isTriangle = true;
+            } else {
+                var i = document.getElementsByClassName("triangle-bottom-left")[0];
+                i.className = "inner";
+                isTriangle = false;
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #container div:not(:first-child) {
+            padding: 3px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #circle {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: green;
+            box-sizing: border-box;
+        }
+
+        .inner {
+            background-color: white;
+            position: relative;
+            width: 75px;
+            height: 75px;
+            left: 38px;
+            top: 40px;
+        }
+
+        .triangle-bottom-left {
+            background-color: transparent;
+            position: relative;
+            left: 38px;
+            top: 40px;
+            width: 0;
+            height: 0;
+            border-bottom: 75px solid red;
+            border-right: 75px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="circle" style="background-color: black;">
+            <div class="triangle-bottom-left"></div>
+        </div>
+
+        <div id="change-color">
+            <button onclick="changeColor()">Change Color</button>
+        </div>
+
+        <div id="change-shape">
+            <button onclick="changeShape()">Change shape</button>
+        </div>
+    </div>
+</body>
+
+</html>
