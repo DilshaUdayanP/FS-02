@@ -11,3 +11,6 @@ You have to create a 'GeeksterPok' project that displays a list of Pokémon. The
 : Creating a reset feature to restore the original list.
 : Designing a user-friendly interface for browsing and filtering Pokémon.
 
+
+
+Hosted Link : https://dilshaudayanp.github.io/FS-02/JS/Assigment/freecodecAMP/15/index.html

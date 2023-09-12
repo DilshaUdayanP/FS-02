@@ -19,3 +19,6 @@ Concepts Used:
 3. window.localstorage()
 4. DOM Manipulation
 5. Form Handling
+
+
+Hosted Link : https://dilshaudayanp.github.io/FS-02/JS/Assigment/freecodecAMP/17/index.html

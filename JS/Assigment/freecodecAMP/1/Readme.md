@@ -4,3 +4,5 @@
 - padding
 - font size
 - font weight 
+
+Hosted Link : https://dilshaudayanp.github.io/FS-02/JS/Assigment/freecodecAMP/1/index.html

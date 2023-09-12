@@ -8,3 +8,7 @@ You have to create a GitHub Finder project. It should feature a search box where
 : Capturing and processing user input to perform API requests.
 : Displaying GitHub user details dynamically on the page.
 : Creating an intuitive and visually appealing user interface
+
+
+
+Hosted Link : https://dilshaudayanp.github.io/FS-02/JS/Assigment/freecodecAMP/16/index.html
