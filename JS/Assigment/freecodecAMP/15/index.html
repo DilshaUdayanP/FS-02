@@ -1,0 +1,3071 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./Style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1>GeeksterMon</h1>
+        </header>
+        <main>
+            <form id="pokemon-type-filter">
+                <select name="type" class="type-filter">
+                    <option value="">Types</option>
+                    <option value="grass">Grass</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="bug">Bug</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="electric">Electric</option>
+                    <option value="ground">Ground</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="ice">Ice</option>
+                    <option value="dragon">Dragon</option>
+                </select>
+                <input type="submit" value="Filter by Type">
+
+                <button onclick="window.location.reload();">Reset</button>
+            </form>
+            <form id="pokemon-search-form" class="" action="" method="GET">
+                <input id="pokemon-search-input" type="text" name="" placeholder="Enter Pokémon Name">
+            </form>
+            <section class="form-spacers"></section>
+            <section id="pokedex">
+                <div class="flip-card" id="bulbasaur">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#1</p>
+                            <h2><a href="/pokemon.html?pokemon_id=1">Bulbasaur</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#1</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=1">Bulbasaur</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>overgrow, chlorophyll</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="ivysaur">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#2</p>
+                            <h2><a href="/pokemon.html?pokemon_id=2">Ivysaur</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#2</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=2">Ivysaur</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>overgrow, chlorophyll</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="venusaur">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#3</p>
+                            <h2><a href="/pokemon.html?pokemon_id=3">Venusaur</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#3</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=3">Venusaur</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>overgrow, chlorophyll</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="charmander">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#4</p>
+                            <h2><a href="/pokemon.html?pokemon_id=4">Charmander</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#4</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=4">Charmander</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>blaze, solar-power</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="charmeleon">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#5</p>
+                            <h2><a href="/pokemon.html?pokemon_id=5">Charmeleon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#5</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=5">Charmeleon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>blaze, solar-power</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="charizard">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#6</p>
+                            <h2><a href="/pokemon.html?pokemon_id=6">Charizard</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#6</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=6">Charizard</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>blaze, solar-power</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="squirtle">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#7</p>
+                            <h2><a href="/pokemon.html?pokemon_id=7">Squirtle</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#7</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=7">Squirtle</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>torrent, rain-dish</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="wartortle">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#8</p>
+                            <h2><a href="/pokemon.html?pokemon_id=8">Wartortle</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#8</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=8">Wartortle</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>torrent, rain-dish</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="blastoise">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#9</p>
+                            <h2><a href="/pokemon.html?pokemon_id=9">Blastoise</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#9</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=9">Blastoise</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>torrent, rain-dish</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="caterpie">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#10</p>
+                            <h2><a href="/pokemon.html?pokemon_id=10">Caterpie</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#10</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=10">Caterpie</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shield-dust, run-away</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="metapod">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#11</p>
+                            <h2><a href="/pokemon.html?pokemon_id=11">Metapod</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#11</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=11">Metapod</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shed-skin</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="butterfree">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#12</p>
+                            <h2><a href="/pokemon.html?pokemon_id=12">Butterfree</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#12</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=12">Butterfree</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>compound-eyes, tinted-lens</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="weedle">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#13</p>
+                            <h2><a href="/pokemon.html?pokemon_id=13">Weedle</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#13</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=13">Weedle</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shield-dust, run-away</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kakuna">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#14</p>
+                            <h2><a href="/pokemon.html?pokemon_id=14">Kakuna</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#14</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=14">Kakuna</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shed-skin</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="beedrill">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#15</p>
+                            <h2><a href="/pokemon.html?pokemon_id=15">Beedrill</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#15</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=15">Beedrill</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swarm, sniper</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="pidgey">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#16</p>
+                            <h2><a href="/pokemon.html?pokemon_id=16">Pidgey</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#16</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=16">Pidgey</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, tangled-feet, big-pecks</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="pidgeotto">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#17</p>
+                            <h2><a href="/pokemon.html?pokemon_id=17">Pidgeotto</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#17</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=17">Pidgeotto</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, tangled-feet, big-pecks</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="pidgeot">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#18</p>
+                            <h2><a href="/pokemon.html?pokemon_id=18">Pidgeot</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#18</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=18">Pidgeot</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, tangled-feet, big-pecks</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="rattata">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#19</p>
+                            <h2><a href="/pokemon.html?pokemon_id=19">Rattata</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#19</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=19">Rattata</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, guts, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="raticate">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#20</p>
+                            <h2><a href="/pokemon.html?pokemon_id=20">Raticate</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#20</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=20">Raticate</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, guts, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="spearow">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#21</p>
+                            <h2><a href="/pokemon.html?pokemon_id=21">Spearow</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#21</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=21">Spearow</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, sniper</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="fearow">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#22</p>
+                            <h2><a href="/pokemon.html?pokemon_id=22">Fearow</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#22</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=22">Fearow</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, sniper</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="ekans">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#23</p>
+                            <h2><a href="/pokemon.html?pokemon_id=23">Ekans</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#23</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=23">Ekans</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, shed-skin, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="arbok">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#24</p>
+                            <h2><a href="/pokemon.html?pokemon_id=24">Arbok</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#24</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=24">Arbok</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, shed-skin, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="pikachu">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#25</p>
+                            <h2><a href="/pokemon.html?pokemon_id=25">Pikachu</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#25</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=25">Pikachu</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>static, lightning-rod</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="raichu">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#26</p>
+                            <h2><a href="/pokemon.html?pokemon_id=26">Raichu</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#26</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=26">Raichu</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>static, lightning-rod</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="sandshrew">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#27</p>
+                            <h2><a href="/pokemon.html?pokemon_id=27">Sandshrew</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#27</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=27">Sandshrew</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>sand-veil, sand-rush</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="sandslash">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#28</p>
+                            <h2><a href="/pokemon.html?pokemon_id=28">Sandslash</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#28</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=28">Sandslash</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>sand-veil, sand-rush</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidoran-f">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#29</p>
+                            <h2><a href="/pokemon.html?pokemon_id=29">Nidoran-f</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#29</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=29">Nidoran-f</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidorina">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#30</p>
+                            <h2><a href="/pokemon.html?pokemon_id=30">Nidorina</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#30</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=30">Nidorina</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidoqueen">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#31</p>
+                            <h2><a href="/pokemon.html?pokemon_id=31">Nidoqueen</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#31</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=31">Nidoqueen</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, sheer-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidoran-m">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#32</p>
+                            <h2><a href="/pokemon.html?pokemon_id=32">Nidoran-m</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#32</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=32">Nidoran-m</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidorino">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#33</p>
+                            <h2><a href="/pokemon.html?pokemon_id=33">Nidorino</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#33</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=33">Nidorino</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, hustle</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="nidoking">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#34</p>
+                            <h2><a href="/pokemon.html?pokemon_id=34">Nidoking</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#34</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=34">Nidoking</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, rivalry, sheer-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="clefairy">
+                    <div class="flip-card-inner" id="fairy">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#35</p>
+                            <h2><a href="/pokemon.html?pokemon_id=35">Clefairy</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FAIRY</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#35</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=35">Clefairy</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>cute-charm, magic-guard, friend-guard</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="clefable">
+                    <div class="flip-card-inner" id="fairy">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#36</p>
+                            <h2><a href="/pokemon.html?pokemon_id=36">Clefable</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FAIRY</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#36</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=36">Clefable</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>cute-charm, magic-guard, unaware</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="vulpix">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#37</p>
+                            <h2><a href="/pokemon.html?pokemon_id=37">Vulpix</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#37</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=37">Vulpix</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>flash-fire, drought</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="ninetales">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#38</p>
+                            <h2><a href="/pokemon.html?pokemon_id=38">Ninetales</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#38</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=38">Ninetales</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>flash-fire, drought</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="jigglypuff">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#39</p>
+                            <h2><a href="/pokemon.html?pokemon_id=39">Jigglypuff</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#39</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=39">Jigglypuff</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>cute-charm, competitive, friend-guard</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="wigglytuff">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#40</p>
+                            <h2><a href="/pokemon.html?pokemon_id=40">Wigglytuff</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#40</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=40">Wigglytuff</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>cute-charm, competitive, frisk</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="zubat">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#41</p>
+                            <h2><a href="/pokemon.html?pokemon_id=41">Zubat</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#41</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=41">Zubat</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>inner-focus, infiltrator</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="golbat">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#42</p>
+                            <h2><a href="/pokemon.html?pokemon_id=42">Golbat</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#42</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=42">Golbat</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>inner-focus, infiltrator</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="oddish">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#43</p>
+                            <h2><a href="/pokemon.html?pokemon_id=43">Oddish</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#43</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=43">Oddish</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, run-away</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="gloom">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#44</p>
+                            <h2><a href="/pokemon.html?pokemon_id=44">Gloom</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#44</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=44">Gloom</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, stench</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="vileplume">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#45</p>
+                            <h2><a href="/pokemon.html?pokemon_id=45">Vileplume</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#45</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=45">Vileplume</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, effect-spore</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="paras">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#46</p>
+                            <h2><a href="/pokemon.html?pokemon_id=46">Paras</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#46</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=46">Paras</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>effect-spore, dry-skin, damp</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="parasect">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#47</p>
+                            <h2><a href="/pokemon.html?pokemon_id=47">Parasect</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#47</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=47">Parasect</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>effect-spore, dry-skin, damp</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="venonat">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#48</p>
+                            <h2><a href="/pokemon.html?pokemon_id=48">Venonat</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#48</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=48">Venonat</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>compound-eyes, tinted-lens, run-away</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="venomoth">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#49</p>
+                            <h2><a href="/pokemon.html?pokemon_id=49">Venomoth</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#49</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=49">Venomoth</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shield-dust, tinted-lens, wonder-skin</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="diglett">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#50</p>
+                            <h2><a href="/pokemon.html?pokemon_id=50">Diglett</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#50</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=50">Diglett</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>sand-veil, arena-trap, sand-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dugtrio">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#51</p>
+                            <h2><a href="/pokemon.html?pokemon_id=51">Dugtrio</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#51</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=51">Dugtrio</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>sand-veil, arena-trap, sand-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="meowth">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#52</p>
+                            <h2><a href="/pokemon.html?pokemon_id=52">Meowth</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#52</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=52">Meowth</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>pickup, technician, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="persian">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#53</p>
+                            <h2><a href="/pokemon.html?pokemon_id=53">Persian</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#53</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=53">Persian</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>limber, technician, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="psyduck">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#54</p>
+                            <h2><a href="/pokemon.html?pokemon_id=54">Psyduck</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#54</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=54">Psyduck</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>damp, cloud-nine, swift-swim</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="golduck">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#55</p>
+                            <h2><a href="/pokemon.html?pokemon_id=55">Golduck</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#55</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=55">Golduck</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>damp, cloud-nine, swift-swim</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="mankey">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#56</p>
+                            <h2><a href="/pokemon.html?pokemon_id=56">Mankey</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#56</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=56">Mankey</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>vital-spirit, anger-point, defiant</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="primeape">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#57</p>
+                            <h2><a href="/pokemon.html?pokemon_id=57">Primeape</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#57</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=57">Primeape</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>vital-spirit, anger-point, defiant</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="growlithe">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#58</p>
+                            <h2><a href="/pokemon.html?pokemon_id=58">Growlithe</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#58</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=58">Growlithe</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, flash-fire, justified</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="arcanine">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#59</p>
+                            <h2><a href="/pokemon.html?pokemon_id=59">Arcanine</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#59</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=59">Arcanine</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, flash-fire, justified</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="poliwag">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#60</p>
+                            <h2><a href="/pokemon.html?pokemon_id=60">Poliwag</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#60</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=60">Poliwag</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>water-absorb, damp, swift-swim</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="poliwhirl">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#61</p>
+                            <h2><a href="/pokemon.html?pokemon_id=61">Poliwhirl</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#61</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=61">Poliwhirl</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>water-absorb, damp, swift-swim</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="poliwrath">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#62</p>
+                            <h2><a href="/pokemon.html?pokemon_id=62">Poliwrath</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#62</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=62">Poliwrath</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>water-absorb, damp, swift-swim</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="abra">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#63</p>
+                            <h2><a href="/pokemon.html?pokemon_id=63">Abra</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#63</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=63">Abra</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>synchronize, inner-focus, magic-guard</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kadabra">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#64</p>
+                            <h2><a href="/pokemon.html?pokemon_id=64">Kadabra</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#64</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=64">Kadabra</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>synchronize, inner-focus, magic-guard</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="alakazam">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#65</p>
+                            <h2><a href="/pokemon.html?pokemon_id=65">Alakazam</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#65</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=65">Alakazam</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>synchronize, inner-focus, magic-guard</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="machop">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#66</p>
+                            <h2><a href="/pokemon.html?pokemon_id=66">Machop</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#66</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=66">Machop</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>guts, no-guard, steadfast</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="machoke">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#67</p>
+                            <h2><a href="/pokemon.html?pokemon_id=67">Machoke</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#67</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=67">Machoke</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>guts, no-guard, steadfast</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="machamp">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#68</p>
+                            <h2><a href="/pokemon.html?pokemon_id=68">Machamp</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#68</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=68">Machamp</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>guts, no-guard, steadfast</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="bellsprout">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#69</p>
+                            <h2><a href="/pokemon.html?pokemon_id=69">Bellsprout</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#69</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=69">Bellsprout</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, gluttony</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="weepinbell">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#70</p>
+                            <h2><a href="/pokemon.html?pokemon_id=70">Weepinbell</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#70</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=70">Weepinbell</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, gluttony</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="victreebel">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#71</p>
+                            <h2><a href="/pokemon.html?pokemon_id=71">Victreebel</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#71</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=71">Victreebel</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, gluttony</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="tentacool">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#72</p>
+                            <h2><a href="/pokemon.html?pokemon_id=72">Tentacool</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#72</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=72">Tentacool</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>clear-body, liquid-ooze, rain-dish</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="tentacruel">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#73</p>
+                            <h2><a href="/pokemon.html?pokemon_id=73">Tentacruel</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#73</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=73">Tentacruel</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>clear-body, liquid-ooze, rain-dish</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="geodude">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#74</p>
+                            <h2><a href="/pokemon.html?pokemon_id=74">Geodude</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#74</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=74">Geodude</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, sturdy, sand-veil</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="graveler">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#75</p>
+                            <h2><a href="/pokemon.html?pokemon_id=75">Graveler</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#75</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=75">Graveler</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, sturdy, sand-veil</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="golem">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#76</p>
+                            <h2><a href="/pokemon.html?pokemon_id=76">Golem</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#76</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=76">Golem</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, sturdy, sand-veil</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="ponyta">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#77</p>
+                            <h2><a href="/pokemon.html?pokemon_id=77">Ponyta</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#77</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=77">Ponyta</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, flash-fire, flame-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="rapidash">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#78</p>
+                            <h2><a href="/pokemon.html?pokemon_id=78">Rapidash</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#78</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=78">Rapidash</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, flash-fire, flame-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="slowpoke">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#79</p>
+                            <h2><a href="/pokemon.html?pokemon_id=79">Slowpoke</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#79</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=79">Slowpoke</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>oblivious, own-tempo, regenerator</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="slowbro">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#80</p>
+                            <h2><a href="/pokemon.html?pokemon_id=80">Slowbro</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#80</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=80">Slowbro</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>oblivious, own-tempo, regenerator</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="magnemite">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#81</p>
+                            <h2><a href="/pokemon.html?pokemon_id=81">Magnemite</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#81</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=81">Magnemite</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>magnet-pull, sturdy, analytic</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="magneton">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#82</p>
+                            <h2><a href="/pokemon.html?pokemon_id=82">Magneton</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#82</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=82">Magneton</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>magnet-pull, sturdy, analytic</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="farfetchd">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#83</p>
+                            <h2><a href="/pokemon.html?pokemon_id=83">Farfetchd</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#83</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=83">Farfetchd</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, inner-focus, defiant</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="doduo">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#84</p>
+                            <h2><a href="/pokemon.html?pokemon_id=84">Doduo</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#84</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=84">Doduo</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, early-bird, tangled-feet</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dodrio">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#85</p>
+                            <h2><a href="/pokemon.html?pokemon_id=85">Dodrio</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#85</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=85">Dodrio</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, early-bird, tangled-feet</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="seel">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#86</p>
+                            <h2><a href="/pokemon.html?pokemon_id=86">Seel</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#86</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=86">Seel</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>thick-fat, hydration, ice-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dewgong">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#87</p>
+                            <h2><a href="/pokemon.html?pokemon_id=87">Dewgong</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#87</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=87">Dewgong</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>thick-fat, hydration, ice-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="grimer">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#88</p>
+                            <h2><a href="/pokemon.html?pokemon_id=88">Grimer</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#88</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=88">Grimer</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>stench, sticky-hold, poison-touch</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="muk">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#89</p>
+                            <h2><a href="/pokemon.html?pokemon_id=89">Muk</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#89</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=89">Muk</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>stench, sticky-hold, poison-touch</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="shellder">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#90</p>
+                            <h2><a href="/pokemon.html?pokemon_id=90">Shellder</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#90</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=90">Shellder</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shell-armor, skill-link, overcoat</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="cloyster">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#91</p>
+                            <h2><a href="/pokemon.html?pokemon_id=91">Cloyster</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#91</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=91">Cloyster</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shell-armor, skill-link, overcoat</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="gastly">
+                    <div class="flip-card-inner" id="ghost">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#92</p>
+                            <h2><a href="/pokemon.html?pokemon_id=92">Gastly</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GHOST</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#92</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=92">Gastly</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>levitate</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="haunter">
+                    <div class="flip-card-inner" id="ghost">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#93</p>
+                            <h2><a href="/pokemon.html?pokemon_id=93">Haunter</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GHOST</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#93</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=93">Haunter</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>levitate</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="gengar">
+                    <div class="flip-card-inner" id="ghost">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#94</p>
+                            <h2><a href="/pokemon.html?pokemon_id=94">Gengar</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GHOST</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#94</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=94">Gengar</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>cursed-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="onix">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#95</p>
+                            <h2><a href="/pokemon.html?pokemon_id=95">Onix</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#95</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=95">Onix</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, sturdy, weak-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="drowzee">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#96</p>
+                            <h2><a href="/pokemon.html?pokemon_id=96">Drowzee</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#96</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=96">Drowzee</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>insomnia, forewarn, inner-focus</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="hypno">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#97</p>
+                            <h2><a href="/pokemon.html?pokemon_id=97">Hypno</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#97</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=97">Hypno</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>insomnia, forewarn, inner-focus</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="krabby">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#98</p>
+                            <h2><a href="/pokemon.html?pokemon_id=98">Krabby</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#98</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=98">Krabby</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>hyper-cutter, shell-armor, sheer-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kingler">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#99</p>
+                            <h2><a href="/pokemon.html?pokemon_id=99">Kingler</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#99</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=99">Kingler</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>hyper-cutter, shell-armor, sheer-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="voltorb">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#100</p>
+                            <h2><a href="/pokemon.html?pokemon_id=100">Voltorb</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#100</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=100">Voltorb</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>soundproof, static, aftermath</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="electrode">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#101</p>
+                            <h2><a href="/pokemon.html?pokemon_id=101">Electrode</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#101</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=101">Electrode</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>soundproof, static, aftermath</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="exeggcute">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#102</p>
+                            <h2><a href="/pokemon.html?pokemon_id=102">Exeggcute</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#102</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=102">Exeggcute</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, harvest</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="exeggutor">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#103</p>
+                            <h2><a href="/pokemon.html?pokemon_id=103">Exeggutor</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#103</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=103">Exeggutor</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, harvest</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="cubone">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#104</p>
+                            <h2><a href="/pokemon.html?pokemon_id=104">Cubone</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#104</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=104">Cubone</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, lightning-rod, battle-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="marowak">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#105</p>
+                            <h2><a href="/pokemon.html?pokemon_id=105">Marowak</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#105</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=105">Marowak</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, lightning-rod, battle-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="hitmonlee">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#106</p>
+                            <h2><a href="/pokemon.html?pokemon_id=106">Hitmonlee</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#106</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=106">Hitmonlee</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>limber, reckless, unburden</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="hitmonchan">
+                    <div class="flip-card-inner" id="fighting">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#107</p>
+                            <h2><a href="/pokemon.html?pokemon_id=107">Hitmonchan</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIGHTING</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#107</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=107">Hitmonchan</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>keen-eye, iron-fist, inner-focus</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="lickitung">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#108</p>
+                            <h2><a href="/pokemon.html?pokemon_id=108">Lickitung</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#108</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=108">Lickitung</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>own-tempo, oblivious, cloud-nine</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="koffing">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#109</p>
+                            <h2><a href="/pokemon.html?pokemon_id=109">Koffing</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#109</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=109">Koffing</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>levitate, neutralizing-gas, stench</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="weezing">
+                    <div class="flip-card-inner" id="poison">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#110</p>
+                            <h2><a href="/pokemon.html?pokemon_id=110">Weezing</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">POISON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#110</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=110">Weezing</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>levitate, neutralizing-gas, stench</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="rhyhorn">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#111</p>
+                            <h2><a href="/pokemon.html?pokemon_id=111">Rhyhorn</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#111</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=111">Rhyhorn</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>lightning-rod, rock-head, reckless</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="rhydon">
+                    <div class="flip-card-inner" id="ground">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#112</p>
+                            <h2><a href="/pokemon.html?pokemon_id=112">Rhydon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GROUND</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#112</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=112">Rhydon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>lightning-rod, rock-head, reckless</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="chansey">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#113</p>
+                            <h2><a href="/pokemon.html?pokemon_id=113">Chansey</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#113</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=113">Chansey</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>natural-cure, serene-grace, healer</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="tangela">
+                    <div class="flip-card-inner" id="grass">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#114</p>
+                            <h2><a href="/pokemon.html?pokemon_id=114">Tangela</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">GRASS</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#114</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=114">Tangela</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>chlorophyll, leaf-guard, regenerator</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kangaskhan">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#115</p>
+                            <h2><a href="/pokemon.html?pokemon_id=115">Kangaskhan</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#115</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=115">Kangaskhan</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>early-bird, scrappy, inner-focus</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="horsea">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#116</p>
+                            <h2><a href="/pokemon.html?pokemon_id=116">Horsea</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#116</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=116">Horsea</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, sniper, damp</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="seadra">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#117</p>
+                            <h2><a href="/pokemon.html?pokemon_id=117">Seadra</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#117</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=117">Seadra</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>poison-point, sniper, damp</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="goldeen">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#118</p>
+                            <h2><a href="/pokemon.html?pokemon_id=118">Goldeen</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#118</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=118">Goldeen</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, water-veil, lightning-rod</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="seaking">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#119</p>
+                            <h2><a href="/pokemon.html?pokemon_id=119">Seaking</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#119</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=119">Seaking</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, water-veil, lightning-rod</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="staryu">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#120</p>
+                            <h2><a href="/pokemon.html?pokemon_id=120">Staryu</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#120</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=120">Staryu</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>illuminate, natural-cure, analytic</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="starmie">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#121</p>
+                            <h2><a href="/pokemon.html?pokemon_id=121">Starmie</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#121</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=121">Starmie</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>illuminate, natural-cure, analytic</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="mr-mime">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#122</p>
+                            <h2><a href="/pokemon.html?pokemon_id=122">Mr-mime</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#122</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=122">Mr-mime</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>soundproof, filter, technician</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="scyther">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#123</p>
+                            <h2><a href="/pokemon.html?pokemon_id=123">Scyther</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#123</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=123">Scyther</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swarm, technician, steadfast</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="jynx">
+                    <div class="flip-card-inner" id="ice">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#124</p>
+                            <h2><a href="/pokemon.html?pokemon_id=124">Jynx</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ICE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#124</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=124">Jynx</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>oblivious, forewarn, dry-skin</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="electabuzz">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#125</p>
+                            <h2><a href="/pokemon.html?pokemon_id=125">Electabuzz</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#125</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=125">Electabuzz</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>static, vital-spirit</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="magmar">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#126</p>
+                            <h2><a href="/pokemon.html?pokemon_id=126">Magmar</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#126</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=126">Magmar</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>flame-body, vital-spirit</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="pinsir">
+                    <div class="flip-card-inner" id="bug">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#127</p>
+                            <h2><a href="/pokemon.html?pokemon_id=127">Pinsir</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">BUG</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#127</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=127">Pinsir</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>hyper-cutter, mold-breaker, moxie</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="tauros">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#128</p>
+                            <h2><a href="/pokemon.html?pokemon_id=128">Tauros</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#128</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=128">Tauros</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, anger-point, sheer-force</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="magikarp">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#129</p>
+                            <h2><a href="/pokemon.html?pokemon_id=129">Magikarp</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#129</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=129">Magikarp</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, rattled</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="gyarados">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#130</p>
+                            <h2><a href="/pokemon.html?pokemon_id=130">Gyarados</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#130</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=130">Gyarados</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>intimidate, moxie</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="lapras">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#131</p>
+                            <h2><a href="/pokemon.html?pokemon_id=131">Lapras</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#131</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=131">Lapras</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>water-absorb, shell-armor, hydration</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="ditto">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#132</p>
+                            <h2><a href="/pokemon.html?pokemon_id=132">Ditto</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#132</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=132">Ditto</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>limber, imposter</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="eevee">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#133</p>
+                            <h2><a href="/pokemon.html?pokemon_id=133">Eevee</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#133</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=133">Eevee</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>run-away, adaptability, anticipation</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="vaporeon">
+                    <div class="flip-card-inner" id="water">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#134</p>
+                            <h2><a href="/pokemon.html?pokemon_id=134">Vaporeon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">WATER</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#134</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=134">Vaporeon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>water-absorb, hydration</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="jolteon">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#135</p>
+                            <h2><a href="/pokemon.html?pokemon_id=135">Jolteon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#135</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=135">Jolteon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>volt-absorb, quick-feet</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="flareon">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#136</p>
+                            <h2><a href="/pokemon.html?pokemon_id=136">Flareon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#136</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=136">Flareon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>flash-fire, guts</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="porygon">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#137</p>
+                            <h2><a href="/pokemon.html?pokemon_id=137">Porygon</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#137</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=137">Porygon</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>trace, download, analytic</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="omanyte">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#138</p>
+                            <h2><a href="/pokemon.html?pokemon_id=138">Omanyte</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#138</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=138">Omanyte</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, shell-armor, weak-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="omastar">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#139</p>
+                            <h2><a href="/pokemon.html?pokemon_id=139">Omastar</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#139</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=139">Omastar</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, shell-armor, weak-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kabuto">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#140</p>
+                            <h2><a href="/pokemon.html?pokemon_id=140">Kabuto</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#140</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=140">Kabuto</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, battle-armor, weak-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="kabutops">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#141</p>
+                            <h2><a href="/pokemon.html?pokemon_id=141">Kabutops</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#141</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=141">Kabutops</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>swift-swim, battle-armor, weak-armor</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="aerodactyl">
+                    <div class="flip-card-inner" id="rock">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#142</p>
+                            <h2><a href="/pokemon.html?pokemon_id=142">Aerodactyl</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ROCK</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#142</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=142">Aerodactyl</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>rock-head, pressure, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="snorlax">
+                    <div class="flip-card-inner" id="normal">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#143</p>
+                            <h2><a href="/pokemon.html?pokemon_id=143">Snorlax</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">NORMAL</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#143</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=143">Snorlax</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>immunity, thick-fat, gluttony</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="articuno">
+                    <div class="flip-card-inner" id="ice">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#144</p>
+                            <h2><a href="/pokemon.html?pokemon_id=144">Articuno</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ICE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#144</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=144">Articuno</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>pressure, snow-cloak</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="zapdos">
+                    <div class="flip-card-inner" id="electric">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#145</p>
+                            <h2><a href="/pokemon.html?pokemon_id=145">Zapdos</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">ELECTRIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#145</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=145">Zapdos</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>pressure, static</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="moltres">
+                    <div class="flip-card-inner" id="fire">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#146</p>
+                            <h2><a href="/pokemon.html?pokemon_id=146">Moltres</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">FIRE</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#146</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=146">Moltres</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>pressure, flame-body</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dratini">
+                    <div class="flip-card-inner" id="dragon">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#147</p>
+                            <h2><a href="/pokemon.html?pokemon_id=147">Dratini</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">DRAGON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#147</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=147">Dratini</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shed-skin, marvel-scale</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dragonair">
+                    <div class="flip-card-inner" id="dragon">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#148</p>
+                            <h2><a href="/pokemon.html?pokemon_id=148">Dragonair</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">DRAGON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#148</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=148">Dragonair</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>shed-skin, marvel-scale</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="dragonite">
+                    <div class="flip-card-inner" id="dragon">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#149</p>
+                            <h2><a href="/pokemon.html?pokemon_id=149">Dragonite</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">DRAGON</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#149</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=149">Dragonite</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>inner-focus, multiscale</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="mewtwo">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#150</p>
+                            <h2><a href="/pokemon.html?pokemon_id=150">Mewtwo</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#150</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=150">Mewtwo</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>pressure, unnerve</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" id="mew">
+                    <div class="flip-card-inner" id="psychic">
+                        <div class="front-pokemon-card"><img
+                                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+                                class="front-pokemon-image">
+                            <p class="front-poke-id">#151</p>
+                            <h2><a href="/pokemon.html?pokemon_id=151">Mew</a></h2>
+                            <p></p>
+                            <p class="front-pokemon-type">PSYCHIC</p>
+                        </div>
+                        <div class="back-pokemon-card"><img src="undefined" class="back-pokemon-image">
+                            <p class="back-poke-id">#151</p>
+                            <h2 class="back-pokemon-name"><a href="/pokemon.html?pokemon_id=151">Mew</a></h2>
+                            <p class="back-pokemon-abilities">
+                            <p>Abilities:<br>synchronize</p>
+                            <p></p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+<script src="./Script.js"></script>
+
+</html>
