@@ -1,10 +1,15 @@
 Task :
-Create an interactive data visualization using Chart.js to display statistics or data of your choice. Use realistic data, and make sure to incorporate various chart types (e.g., bar chart, pie chart, line chart). Animate the chart transitions and interactions using Anime.js.
+You need to complete the below mentioned task, reference link has been attached below.
+Functionalities which are taught in the class are being used to complete this task
+You have to randomly generate car photos using Unsplash APIs.
+API URL: https://api.unsplash.com/photos/random?client_id=Your_Access_Key&query=car
 
+You can generate your own API key from the Unsplash platform.
+URL: https://unsplash.com/developers 
 
-Learning :
-Through Chart.js, you'll gain experience in creating dynamic and interactive charts for displaying real-time data. You'll learn how to configure and update charts to reflect changing data, which is a crucial skill in data visualization.
-You'll explore the usage of Anime.js to add smooth and visually appealing animations to your chart. This can enhance user engagement and make your project more attractive.
+Learning from this project
+DOM manipulation using JS
+Event Listener
 
 Code Link : https://github.com/DilshaUdayanP/FS-02/blob/main/JS/Assigment/freecodecAMP/26/index.html
 
