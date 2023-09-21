@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+
+.curr-popup {
+    &.show {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    position: fixed;
+    margin: 2rem;
+    z-index: -1;
+    background: #3a434f;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    border: 1px solid #48505d;
+    opacity: 0;
+
+    .close-popup {
+        float: right;
+        font-size: 22px;
+        margin: 2rem;
+        color: #fff;
+        display: inline-block;
+    }
+
+    &:before {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: ' ';
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+        padding: 2rem;
+        display: inline-block;
+        font-size: 26px;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        overflow: scroll;
+
+        li {
+            padding: 1.5rem;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            cursor: pointer;
+
+            &:nth-child(odd) {
+                background: rgba(255, 255, 255, 0.05);
+            }
+
+            &:before {
+                font-family: FontAwesome;
+                content: '\f00c';
+                opacity: 0.25;
+                margin-right: 10px;
+            }
+
+            &.active {
+                &:before {
+                    color: #7ce1c4;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+body {
+    overflow-x: hidden;
+    background: #2b333f;
+    color: #fff;
+
+    &.gbp {
+
+        .usd,
+        .eur {
+            display: none;
+        }
+    }
+
+    &.usd {
+
+        .gbp,
+        .eur {
+            display: none;
+        }
+    }
+
+    &.eur {
+
+        .usd,
+        .gbp {
+            display: none;
+        }
+    }
+}
+
+[class*='col-'] {
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid #48505d;
+    padding: 1rem 0;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+
+    a.add-curr {
+        float: left;
+        height: 44px;
+        width: 44px;
+        font-size: 22px;
+
+
+        z-index: 6;
+        color: #fff;
+        text-transform: uppercase;
+        height: 44px;
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid #48505d;
+        border-raius: 3px;
+        background: #222932;
+        padding: 6px 0 0 0;
+        text-align: center;
+        margin: 0;
+
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
+    }
+
+    .currency {
+        float: right;
+
+        a.change-curr {
+            float: left;
+            height: 44px;
+            width: 44px;
+            display: block;
+            margin-right: 10px;
+            color: #fff;
+            font-size: 22px;
+            padding: 3px;
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+
+            &.active-curr {
+                color: #7ce1c4;
+            }
+        }
+    }
+
+    .logo {
+        font-weight: 200;
+        font-size: 32px;
+        color: #7ce1c4;
+        text-transform: uppercase;
+        font-family: 'Unica One', cursive;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+h2.price {
+    text-align: right;
+    font-weight: 100;
+    font-size: 38px;
+    margin: 0;
+    letter-spacing: 1px;
+
+    sup {
+        vertical-align: baseline;
+        font-size: 22px;
+        opacity: 0.5;
+        font-weight: 300;
+
+    }
+
+    &.eur {
+        &:before {
+            content: '€';
+            vertical-align: baseline;
+            font-size: 22px;
+            margin-right: 0.25rem;
+            opacity: 0.5;
+            font-weight: 300;
+        }
+    }
+
+    &.gbp {
+        &:before {
+            content: '£';
+            vertical-align: baseline;
+            font-size: 22px;
+            opacity: 0.5;
+            font-weight: 300;
+            margin-right: 0.25rem;
+        }
+    }
+
+    &.usd {
+        &:before {
+            content: '$';
+            vertical-align: baseline;
+            font-size: 22px;
+            opacity: 0.5;
+            margin-right: 0.25rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.curr-row {
+    border-bottom: 1px solid #48505d;
+}
+
+h3 {
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+
+    span {
+        font-weight: 300;
+        display: block;
+        color: #abbdcb;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: px;
+        display: block;
+        margin-top: 0.75rem;
+    }
+}
+
+footer {
+    padding: 2rem;
+
+    .donate {
+        p {
+            font-weight: 200;
+            display: block;
+            color: #abbdcb;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-style: italic;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+.purge {
+    transform: translateX(-88px);
+}
+
+.swipe {
+    transition: all 0.25s ease-in-out;
+    z-index: 1;
+    padding: 2rem;
+
+    position: relative;
+    background: #2b333f;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0;
+}
+
+.curr-row {
+    position: relative;
+}
+
+.delete-btn {
+    font-size: 22px;
+
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+}
+
+.ui-btn {
+    display: block;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    display: block;
+}
+
+.behind {
+    width: 88px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.behind a.ui-btn {
+    width: 88px;
+    margin: 0px;
+    float: right;
+    height: 100%;
+    border: none;
+}
+
+.behind a.delete-btn,
+.behind a.delete-btn:active,
+.behind a.delete-btn:visited,
+.behind a.delete-btn:focus,
+.behind a.delete-btn:hover {
+    color: white;
+    background-color: #a61919;
+    text-shadow: none;
+}
+
+
+
+.language-select {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+    z-index: 6;
+    color: #fff;
+    text-transform: uppercase;
+    height: 44px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #48505d;
+    border-raius: 3px;
+    background: #222932;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    width: 44px;
+
+    li {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 2;
+        min-height: 40px;
+        font-size: 22px;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+}
+
+.language-select.open {
+    height: auto;
+}
+
+.language-select li.active {
+    order: 1;
+    pointer-events: none;
+}

@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="gbp">
+
+    <div class="curr-popup">
+        <h3>Select Currencies</h3>
+        <a href="#" class="close-popup"><i class="fa fa-close"></i></a>
+        <ul>
+            <li class="btc-cur active" data-unit="btc">Bitcoin</li>
+            <li class="ltc-cur active" data-unit="ltc">Litecoin</li>
+            <li class="eth-cur active" data-unit="eth">Ethereum</li>
+            <li class="etc-cur active" data-unit="etc">Ethereum Classic</li>
+            <li class="xmr-cur active" data-unit="xmr">Monero</li>
+            <li class="dash-cur active" data-unit="dash">Dash</li>
+            <li class="xrp-cur active" data-unit="xrp">Ripple XRP</li>
+            <li class="doge-cur active" data-unit="doge">Dogecoin</li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="add-curr"><i class="fa fa-plus"></i></a>
+                <div class="logo">MNTCKR</div>
+                <div class="currency">
+                    <ul class="language-select">
+                        <li class="active change-curr gbp-cur"><i class="fa fa-gbp"></i></li>
+                        <li class="change-curr eur-cur "><i class="fa fa-eur"></i></li>
+                        <li class="change-curr usd-cur"><i class="fa fa-usd"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sortable">
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="ltc"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Litecoin<span>LTC</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur ltc-eur"></h2>
+                    <h2 class="price gbp ltc-gbp"></h2>
+                    <h2 class="price usd ltc-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="dash"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        DASH<span>DASH</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur dash-eur"></h2>
+                    <h2 class="price gbp dash-gbp"></h2>
+                    <h2 class="price usd dash-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="xmr"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Monero<span>XMR</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur xmr-eur"></h2>
+                    <h2 class="price gbp xmr-gbp"></h2>
+                    <h2 class="price usd xmr-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="btc"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Bitcoin<span>BTC</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur btc-eur"></h2>
+                    <h2 class="price gbp btc-gbp"></h2>
+                    <h2 class="price usd btc-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="eth"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Ethereum<span>ETH</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur eth-eur"></h2>
+                    <h2 class="price gbp eth-gbp"></h2>
+                    <h2 class="price usd eth-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="etc"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Ethereum Classic<span>ETC</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur etc-eur"></h2>
+                    <h2 class="price gbp etc-gbp"></h2>
+                    <h2 class="price usd etc-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="doge"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        DogeCoin<span>DOGE</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur doge-eur"></h2>
+                    <h2 class="price gbp doge-gbp"></h2>
+                    <h2 class="price usd doge-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row curr-row">
+            <div class="behind">
+                <a href="#" class="ui-btn delete-btn" data-unit="xrp"><i class="fa fa-trash-o"></i></a>
+            </div>
+            <div class="swipe">
+                <div class="col-xs-6">
+                    <h3 class="curr">
+                        Ripple XRP<span>XRP</span>
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <h2 class="price eur xrp-eur"></h2>
+                    <h2 class="price gbp xrp-gbp"></h2>
+                    <h2 class="price usd xrp-usd"></h2>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-xs-12 donate">
+                <p>Donations Welcome<span>LTC - LiUyTiw88Sz1R2K1QSkfb1ycVySUv6vWZY</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
